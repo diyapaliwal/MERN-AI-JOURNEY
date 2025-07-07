@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f0fdf4;
+            color: #2d3748;
+            padding: 2rem;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2f855a;
+            margin-bottom: 2rem;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+        }
+
+        form div {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #cbd5e0;
+            border-radius: 6px;
+            font-size: 1rem;
+            background-color: #f9fafb;
+        }
+
+        select {
+            background-color: #f9fafb;
+        }
+
+        input[type="radio"] {
+            margin-right: 0.4rem;
+            transform: scale(1.1);
+        }
+
+        p {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        button {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 6px;
+            background-color: #38a169;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #2f855a;
+        }
+    </style>
+    <title>HTML forms</title>
+</head>
+<body>
+    <h1>Forms in HTML</h1>
+    <form action="/submit.php">
+        <div>
+            <label for="name">Name</label>
+         <input id="name" type="text"  placeholder="enter text" required>
+         <select id="gender" required>
+             <option value="" disabled selected>Select Gender</option>
+             <option value="male">Male</option>
+             <option value="female">Female</option>
+             <option value="other">Other</option>
+         </select>
+         <label for="dob">D.O.B</label>
+         <input id="dob" type="date" required>
+         <label for="branch">Select Branch</label>
+         <select name="branch" id="branch" required>
+            <option value="" disabled selected>branch</option>
+            <option value="cse">CSE</option>
+            <option value="ece">ECE</option>
+            <option value="mechanical">ME</option>
+         </select>
+         <label for="email">Email</label>
+         <input id="email" type="email" required>
+        </div>
+        <label for="pass">Password</label>
+        <input id="pass" type="password">
+        <p>JOB ROLE</p>
+        <input id="da" type="radio" name="job">
+        <label for="da">Data Analyst</label>
+        <input id="sde" type="radio" name="job">
+        <label for="sde">SDE</label>
+        <input id="uiux" type="radio" name="job">
+        <label for="uiux">UI UX</label>
+        <div>
+            <label for="comments">Comments</label>
+            <textarea id="comments" placeholder="Enter your Comments" rows="4"></textarea>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+</body>
+</html>

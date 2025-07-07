@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>/* Page styling */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fdfdfd;
+  padding: 2rem;
+  text-align: center;
+  color: #333;
+}
+
+/* Heading */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 2rem;
+}
+
+/* Table layout */
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table header */
+thead {
+  background-color: #2c3e50;
+  color: white;
+}
+
+th, td {
+  border: 1px solid #999;
+  padding: 12px 20px;
+  text-align: center;
+}
+
+/* Zebra striping for rows */
+tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #d1e7dd;
+  transition: background-color 0.3s;
+}
+</style>
+    <title>Tables - </title>
+</head>
+<body>
+    <h1>Tables in HTML</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>Year</th>
+                <th>Roll No.</th>
+                <th>ygb</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Diya Paliwal</td>
+                <td>CSE</td>
+                <td>4th Year</td>
+                <td>22ETCCS044</td>
+            </tr>
+            <tr>
+                <td>Manas Paliwal</td>
+                <td>CSE</td>
+                <td colspan="2">4th Year</td>
+                <td>22ETCCS045</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
